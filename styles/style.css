@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Quicksand:wght@300..700&display=swap');
+
+html{
+    font-size: medium;
+    box-sizing: border-box;
+    border-style: dotted;
+    border-color: #564F66;
+    border-width: 5px;
+}
+
+body{
+    background-color: #D0E5FF;
+    border-style: dotted;
+    border-color: #564F66;  
+}
+
+h1{
+    color: #4F5C6B;
+    text-align: center;
+}
+
+h2,h3{
+    color: #564F66;
+    text-align: center;
+    line-height: 2;
+}
+
+p,small{
+    color:#3E3F4A;
+    font-family: Quicksand, Ephesis;
+    text-align: center;
+    line-height: 1.5;
+}
+
+ul{
+    color:#3E3F4A;
+    font-family: Quicksand, Ephesis;
+    text-align: center;
+    list-style-position: inside;
+}
+
+
+#summary{
+    border-style: dotted;
+    border-color: #564F66; 
+    margin: 1rem;
+}
+
+#education{
+    border-style: dotted;
+    border-color: #564F66; 
+    margin: 1rem;
+}
+
+#experience{
+    border-style: dotted;
+    border-color: #564F66; 
+    margin: 1rem;
+}
+
+#skills{
+    border-style: dotted;
+    border-color: #564F66; 
+    margin: 1rem;
+    padding-left: 0%;
+}
+
+#hero{
+    text-align: center;
+    background-image: url("/images/night-sky.jpg");
+    background-size:cover;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.display-text{
+    color: aliceblue;
+    font-size: larger;
+    font-weight: 600;
+}
+
+.main-nav{
+    list-style-type: none;
+    padding-left: 5%;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.name{
+    text-align: left;
+    padding-left: 3%;
+    font-family:'Times New Roman', Times, serif;
+    line-height: 0%;
+    font-weight: 500;
+    color: rgb(187, 91, 2);
+}
+
+a:link{
+    color: blue;
+}
+
+a:visited{
+    color: rgb(92, 23, 156);
+}
+
+a:hover{
+    color:rgb(187, 91, 2);
+}
