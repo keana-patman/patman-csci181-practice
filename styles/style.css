@@ -106,3 +106,29 @@ a:visited{
 a:hover{
     color:rgb(187, 91, 2);
 }
+
+#contact{
+    text-align: left;
+}
+
+textarea{
+    width: 25%;
+    height: 200px;
+    resize: none;
+}
+
+table, th, td{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-family: Quicksand, Ephesis; 
+    
+}
+#table{
+    border-style: dotted;
+    border-color: #564F66; 
+    margin: 1rem;
+    
+}
