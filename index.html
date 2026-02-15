@@ -8,7 +8,7 @@
   </head>
 
   <body>
-    <header id="page-header">
+    <header class="page-header">
       <img src="./images/logoC.png" alt="Fire Logo" width="200px"/>
       <p class="name">Keana Patman</p>
       <nav>
@@ -26,17 +26,40 @@
         <button>View my Work!</button>
       </section>
       <h1>~Home~</h1>
-      <form method="post">
-        <h2 id="contact">~Contact Me~</h2>
-        <label for="firstname">First Name:</label><br>
-        <input type="text" id="firstname" name="firstname"><br>
-        <label for="lastname">Last Name:</label><br>
-        <input type="text" id="lastname" name="lastname"><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email"><br><br>
-        <label for="message">Enter Message:</label><br>
-        <textarea name="message" id="message"></textarea><br><br>
-        <button>Submit your Message</button>
+      <section>
+        <h2 id="project">~Projects~</h2>
+          <ul class="project-card">
+            <li><h3 class="project-head"> Honors E-portfilio</h3></li>
+            <li>An online collection of important work from classes through my Honors coursework
+              in college. Includes a short description, examples of work, and examples of some creative projects.</li>
+            <li><a href="https://sites.google.com/view/keana-patman-portfolio/home">Visit E-portfilio</a></li>
+          </ul>
+          <ul class="project-card">
+            <li><h3 class="project-head">Projected Doom Clock</h3></li>
+            <li>A not real clock that has calculated the end of the Earth based on current and future
+              predictions and environmental changes.</li>
+            <li><a href="https://theuselessweb.com/">View: Doom Clock</a></li>
+          </ul>
+          <ul class="project-card">
+            <li><h3 class="project-head">Citiation Library</h3></li>
+            <li>A theoretical website that can store all citatioins in a neat easy-to-read library.
+              Includes different folders for different papers, several styles of citations, and ranking system.</li>
+            <li><a href="https://theuselessweb.com/">Visit: Citation Library</a></li>
+          </ul>
+      </section>
+      <section>
+        <form method="post">
+          <h2 id="contact">~Contact Me~</h2>
+          <label for="firstname">First Name:</label><br>
+          <input type="text" id="firstname" name="firstname"><br>
+          <label for="lastname">Last Name:</label><br>
+          <input type="text" id="lastname" name="lastname"><br>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email"><br><br>
+          <label for="message">Enter Message:</label><br>
+          <textarea name="message" id="message"></textarea><br><br>
+          <button>Submit your Message</button>
+      </section>
       </form>
     </main>
   </body>
