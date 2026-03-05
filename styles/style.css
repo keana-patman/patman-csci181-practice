@@ -1,44 +1,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Quicksand:wght@300..700&display=swap');
 
-html{
-    font-size: medium;
-    box-sizing: border-box;
-    border-style: dotted;
-    border-color: #564F66;
-    border-width: 5px;
-}
+@layer base{
+    html{
+        font-size: medium;
+        box-sizing: border-box;
+        border-style: dotted;
+        border-color: #564F66;
+        border-width: 5px;
+    }
 
-body{
-    background-color: #D0E5FF;
-    border-style: dotted;
-    border-color: #564F66;  
-}
+    body{
+        background-color: #D0E5FF;
+        border-style: dotted;
+        border-color: #564F66;  
+    }
 
-h1{
-    color: #4F5C6B;
-    text-align: center;
-}
+    h1{
+        color: #4F5C6B;
+        text-align: center;
+    }
 
-h2,h3{
-    color: #564F66;
-    text-align: center;
-    line-height: 2;
-}
+    h2,h3{
+        color: #564F66;
+        text-align: center;
+        line-height: 2;
+    }
 
-p,small{
-    color:#3E3F4A;
-    font-family: Quicksand, Ephesis;
-    text-align: center;
-    line-height: 1.5;
-}
+    p,small{
+        color:#3E3F4A;
+        font-family: Quicksand, Ephesis;
+        text-align: center;
+        line-height: 1.5;
+    }
 
-ul{
-    color:#3E3F4A;
-    font-family: Quicksand, Ephesis;
-    text-align: center;
-    list-style-position: inside;
-}
+    ul{
+        color:#3E3F4A;
+        font-family: Quicksand, Ephesis;
+        text-align: center;
+        list-style-position: inside;
+    }
 
+    main{
+        padding-top: 2px;
+    }
+
+    a:link{
+        color: blue;
+    }
+
+    a:visited{
+        color: rgb(92, 23, 156);
+    }
+
+    a:hover{
+        color:rgb(187, 91, 2);
+    }
+
+    textarea{
+        width: 25%;
+        height: 200px;
+        resize: none;
+    }
+
+    table, th, td{
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        border: 1px solid black;
+        border-collapse: collapse;
+        font-family: Quicksand, Ephesis; 
+    }
+}
 
 #summary{
     border-style: dotted;
@@ -95,40 +127,12 @@ ul{
     color: rgb(187, 91, 2);
 }
 
-a:link{
-    color: blue;
-}
-
-a:visited{
-    color: rgb(92, 23, 156);
-}
-
-a:hover{
-    color:rgb(187, 91, 2);
-}
-
 #contact{
     text-align: left;
 }
 
 #project{
     text-align: left;
-}
-
-textarea{
-    width: 25%;
-    height: 200px;
-    resize: none;
-}
-
-table, th, td{
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    border: 1px solid black;
-    border-collapse: collapse;
-    font-family: Quicksand, Ephesis; 
-    
 }
 
 #table{
@@ -144,10 +148,6 @@ table, th, td{
     background-color: #B1DAFF;
     padding-bottom: 1px;
     border: 4px solid #85A5D6;
-}
-
-main{
-    padding-top: 2px;
 }
 
 .project-card{
