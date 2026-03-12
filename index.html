@@ -3,25 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> <!--Please comment this line out for the week 9 assignment.-->
     <link rel="stylesheet" href="./styles/style.css">
     <title>Home Page</title>
   </head>
 
   <body>
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
     <!-------------Page Header----------------->
     <header class="page-header">
       <img src="./images/logoC.png" alt="Fire Logo" width="200px"/>
       <p class="name">Keana Patman</p>
-      <nav>
+      <nav aria-label="Primary Navigation">
         <ul class="main-nav">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" aria-current="page">Home</a></li>
           <li><a href="resume.html">Resume</a></li>
         </ul>
       </nav>
     </header>
     <!-------------Hero Section----------------->
-    <main>
+    <main id="main-content">
       <section id="hero"> 
         <p class="display-text">
           ~Make the World a Little Sillier~

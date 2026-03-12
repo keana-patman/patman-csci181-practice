@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Quicksand:wght@300..700&display=swap');
 
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    animation-delay: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 @layer base{
     html{
         font-size: medium;
@@ -53,7 +64,7 @@
     }
 
     a:hover{
-        color:rgb(187, 91, 2);
+        color:rgb(208, 129, 9);
     }
 
     textarea{
@@ -69,6 +80,14 @@
         border: 1px solid black;
         border-collapse: collapse;
         font-family: Quicksand, Ephesis; 
+    }
+
+    nav a[aria-current="page"] {
+        color: aliceblue;
+        background-color: #564F66;
+        padding: 4px;
+        text-decoration: none;
+        border-radius: 12px;
     }
 }
 
@@ -115,7 +134,7 @@
     list-style-type: none;
     padding-left: 5%;
     text-align: left;
-    line-height: 1.5;
+    line-height: 2;
 }
 
 .name{
@@ -124,7 +143,7 @@
     font-family:'Times New Roman', Times, serif;
     line-height: 0%;
     font-weight: 500;
-    color: rgb(187, 91, 2);
+    color: #ed5508;
 }
 
 #contact{
@@ -145,7 +164,7 @@
 .page-header{
     position: sticky;
     top: 0;
-    background-color: #B1DAFF;
+    background-color: #9fc7ff;
     padding-bottom: 1px;
     border: 4px solid #85A5D6;
 }
@@ -164,6 +183,20 @@
 .project-head{
     text-align: left;
     margin-top: 1px;
-    margin-bottom: 5px;
-    
+    margin-bottom: 5px; 
+}
+
+.skip-link{
+    position: absolute;
+    left: -500px;
+    top: 0;
+    font-family: Quicksand, Ephesis;
+    font-size: small;
+    background:#564F66;
+    color: aliceblue;
+}
+
+.skip-link:focus{
+    left: 1rem;
+    top: 0;
 }
