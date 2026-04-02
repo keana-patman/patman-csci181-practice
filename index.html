@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> <!--Please comment this line out for the week 9 assignment.-->
+    <!--<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> Please comment this line out for the week 9 assignment.-->
     <link rel="stylesheet" href="./styles/style.css">
     <script src="./scripts/trip.js" defer></script>
+    <script src="./scripts/theme.js" defer></script>
     <title>Home Page</title>
   </head>
 
@@ -19,6 +20,7 @@
         <ul class="main-nav">
           <li><a href="index.html" aria-current="page">Home</a></li>
           <li><a href="resume.html">Resume</a></li>
+          <li><button type="button" id="theme-toggle">Switch to Dark Mode</button></li>
         </ul>
       </nav>
     </header>
@@ -54,7 +56,7 @@
           </ul>
       </section>
       <!-------------Testimonial Cards----------------->
-      <section>
+      <!--<section>
         <ul class="list-none mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-6 py-12 w-3/4 justify-center-safe">
           <li class="bg-slate-50 pb-8 p-8 pt-6 rounded-xl shadow-lg max-w-80 relative">
               <svg class="fill-gray-200 absolute top-3 left-2" viewBox="0 0 16 16" aria-hidden="true" focusable="false" width="20px" >
@@ -63,7 +65,7 @@
               </svg>
             <figure>
               <blockquote>
-                <p class="italic text-sm/4 text-left pb-8 font-sans font-light text-gray-5000">CSCI 181 completely changed how I think about the internet.
+                <p class="italic text-sm/4 text-left pb-8 font-sans font-light text-gray-500">CSCI 181 completely changed how I think about the internet.
                   I finally understand the 'magic' behind the websites I use every day.
                 </p>
               </blockquote>
@@ -84,7 +86,7 @@
               </svg>
             <figure>
               <blockquote>
-                <p class="italic text-sm/4 text-left pb-8 font-sans font-light text-gray-5000">Now I have the confidence to build my own website. The instructor
+                <p class="italic text-sm/4 text-left pb-8 font-sans font-light text-gray-500">Now I have the confidence to build my own website. The instructor
                   was really supportive and the material was always relevant.
                 </p>
               </blockquote>
@@ -105,7 +107,7 @@
               </svg>
             <figure>
               <blockquote>
-                <p class="italic text-sm/4 text-left pb-8 font-sans font-light text-gray-5000">I learned so much about the principles of design and usability.
+                <p class="italic text-sm/4 text-left pb-8 font-sans font-light text-gray-500">I learned so much about the principles of design and usability.
                   I didn't know coding could be so fun and creative!
                 </p>
               </blockquote>
@@ -120,7 +122,7 @@
             </figure>
           </li>          
         </ul>
-      </section>
+      </section>-->
       <!-------------Contact Section----------------->
       <section>
         <form method="post">
@@ -133,7 +135,7 @@
           <input type="email" id="email" name="email"><br><br>
           <label for="message">Enter Message:</label><br>
           <textarea name="message" id="message"></textarea><br><br>
-          <button>Submit your Message</button>
+          <button id="submit-button">Submit your Message</button>
       </section>
       </form>
     </main>
